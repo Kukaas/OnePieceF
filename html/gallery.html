@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/gallery.css">
+    <title>Strawhat Bounties</title>
+</head>
+<body>
+    <div class="bounty-container">
+        <a href="index.html">&LeftArrow; Go back</a>
+        <h1>Strawhat Bounties</h1>
+        <div class="line"></div>
+        <div class="image-container">
+            <div class="image"><img src="../img/luffy.jpg" alt=""></div>
+            <div class="image"><img src="../img/zoro.jpg" alt=""></div>
+            <div class="image"><img src="../img/nami.jpg" alt=""></div>
+            <div class="image"><img src="../img/ussop.jpg" alt=""></div>
+            <div class="image"><img src="../img/sanji.jpg" alt=""></div>
+            <div class="image"><img src="../img/chopper.jpg" alt=""></div>
+            <div class="image"><img src="../img/robin.jpg" alt=""></div>
+            <div class="image"><img src="../img/franky.jpg" alt=""></div>
+            <div class="image"><img src="../img/brook.jpg" alt=""></div>
+            <div class="image"><img src="../img/jinbei.jpg" alt=""></div>
+        </div>
+
+        <div class="popup">
+            <span>&times;</span>
+            <img src="../img/luffy.jpg" alt="">
+        </div>
+    </div>
+    <footer>
+        <p>Copyright © 2023 Kukaaasss <br> One Piece is Real. All rights reserved.</p>
+      </footer>
+
+    <script>
+        document.querySelectorAll('.image-container img').forEach(image =>{
+            image.onclick = () => {
+                document.querySelector('.popup').style.display = 'block';
+                document.querySelector('.popup img').src = image.getAttribute('src');
+            }
+        });
+
+        document.querySelector('.popup span').onclick = () =>{
+            document.querySelector('.popup').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
