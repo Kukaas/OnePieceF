@@ -115,6 +115,20 @@ html, body{
     display: none;
 }
 
+/*footer*/
+footer{
+    background-color: #1b1b1b;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer p{
+    font-family: sans-serif;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+  }
+
 @media (max-width: 768px){s
     .bounty-container .popup img{
         width: 95%;
